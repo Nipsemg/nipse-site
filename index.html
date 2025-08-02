@@ -26,7 +26,10 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero" style="background-image:url('images/hero.png');">
+    <!-- The hero background previously referenced an external image. To avoid missing
+         assets when deployed via GitHub Pages, we rely on a CSS gradient defined
+         in the stylesheet instead of an external PNG. -->
+    <section id="home" class="hero">
         <div class="hero-overlay">
             <div class="hero-content container">
                 <h1>Coleção Nipse: Qualidade e Estilo para o seu Lar</h1>
@@ -48,10 +51,10 @@
     </section>
 
     <!-- Mission Section -->
-    <section id="mission" class="section alternate">
-        <div class="container mission-container">
-            <div class="img-column"><img src="images/mission.png" alt="Nossa missão" /></div>
-            <div class="text-column">
+    <section id="mission" class="section mission-section">
+        <!-- Use a background image instead of a separate column to avoid redundancy -->
+        <div class="mission-overlay">
+            <div class="container mission-content">
                 <h2>Nossa Missão</h2>
                 <p>Nossa missão na Nipse é muito mais do que medir, cortar e costurar. É criar peças de qualidade e elegância que possam tornar o lar de cada pessoa um lugar mais acolhedor e confortável. Acreditamos que cada detalhe conta e que, através de nossos produtos, podemos contribuir para que as pessoas se sintam mais amadas e cuidadas em suas casas.</p>
                 <blockquote>Nós amamos o que fazemos e esperamos compartilhar essa paixão com você através de nossos produtos.</blockquote>

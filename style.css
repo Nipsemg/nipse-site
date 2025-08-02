@@ -80,6 +80,8 @@ img {
 
 /* Hero */
 .hero {
+  /* Removed external background image dependency. Use a soft gradient instead */
+  background: linear-gradient(180deg, #fbeee0 0%, #fae9d6 100%);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -107,6 +109,27 @@ img {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   color: #fafafa;
+}
+
+/* Mission Section */
+.mission-section {
+  /* Replace mission section image with a subtle background colour to
+     avoid missing file references. */
+  background: #fff5f0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #2b2d42;
+}
+.mission-overlay {
+  background: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.mission-content {
+  max-width: 600px;
 }
 .btn-primary, .btn-secondary {
   display: inline-block;
@@ -197,6 +220,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* Smooth animation for hover interaction */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 .product-card h3 {
   color: #d25e26;
@@ -207,6 +232,13 @@ img {
 }
 .product-card .btn-secondary {
   align-self: flex-start;
+}
+
+/* Hover effect for product cards: enlarge slightly and change background color */
+.product-card:hover {
+  transform: scale(1.05);
+  background-color: #fff5f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Wholesale form */
