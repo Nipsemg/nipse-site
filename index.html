@@ -13,7 +13,8 @@
         <nav class="navbar">
             <div class="container nav-container">
                 <!-- Use a cropped, square version of the logo to avoid distortion -->
-                <a href="#" class="brand"><img src="images/logo_square.png" alt="Logo Nipse" class="logo" /> Nipse</a>
+                    <!-- Reference the logo at the project root instead of the non-existent images folder -->
+                    <a href="#" class="brand"><img src="logo_square.png" alt="Logo Nipse" class="logo" /> Nipse</a>
                 <ul class="nav-menu">
                     <li><a href="#home">Início</a></li>
                     <li><a href="#about">Quem Somos</a></li>
@@ -107,62 +108,63 @@
                 <div class="product-card">
                     <h3>Lençóis</h3>
                     <p>Lençóis tradicionais e com elástico, confeccionados com tecidos de alta qualidade para garantir o máximo de conforto.</p>
-                    <a href="#" class="btn-secondary">Ver produtos</a>
+                    <!-- Retail customers can proceed directly to a purchase link (placeholder) -->
+                    <a href="#comprar-lencois" class="btn-secondary">Comprar agora</a>
                 </div>
                 <div class="product-card">
                     <h3>Capas de Colchão</h3>
                     <p>Capas projetadas para proteger e prolongar a vida útil do seu colchão, com opções impermeáveis e de tecidos diferenciados.</p>
-                    <a href="#" class="btn-secondary">Ver produtos</a>
+                    <a href="#comprar-capas" class="btn-secondary">Comprar agora</a>
                 </div>
                 <div class="product-card">
                     <h3>Fronhas</h3>
                     <p>Fronhas delicadas e confortáveis, disponíveis em diversas cores e estampas para complementar seu jogo de cama.</p>
-                    <a href="#" class="btn-secondary">Ver produtos</a>
+                    <a href="#comprar-fronhas" class="btn-secondary">Comprar agora</a>
                 </div>
                 <div class="product-card">
                     <h3>Jogos de Cama</h3>
                     <p>Conjuntos com equilíbrio perfeito entre conforto e sofisticação. Proporcionam noites de sono aconchegantes.</p>
-                    <a href="#" class="btn-secondary">Ver produtos</a>
+                    <a href="#comprar-jogos" class="btn-secondary">Comprar agora</a>
                 </div>
                 <div class="product-card">
                     <h3>Mantas</h3>
                     <p>Mantas e cobertores que oferecem conforto térmico e maciez incomparável, com cores e estampas variadas.</p>
-                    <a href="#" class="btn-secondary">Ver produtos</a>
+                    <a href="#comprar-mantas" class="btn-secondary">Comprar agora</a>
                 </div>
                 <div class="product-card">
                     <h3>Cobertores</h3>
                     <p>Cobertores macios e isolantes, com alta durabilidade – escolha ideal para um descanso acolhedor.</p>
-                    <a href="#" class="btn-secondary">Ver produtos</a>
+                    <a href="#comprar-cobertores" class="btn-secondary">Comprar agora</a>
                 </div>
                 <div class="product-card">
                     <h3>Travesseiros</h3>
                     <p>Travesseiros de alto conforto e suporte, adaptando-se perfeitamente à cabeça e pescoço.</p>
-                    <a href="#" class="btn-secondary">Ver produtos</a>
+                    <a href="#comprar-travesseiros" class="btn-secondary">Comprar agora</a>
                 </div>
                 <div class="product-card">
                     <h3>Cortinas</h3>
                     <p>Cortinas elegantes que oferecem privacidade e controle da luz, com opções de tecidos leves e blackout.</p>
-                    <a href="#" class="btn-secondary">Ver produtos</a>
+                    <a href="#comprar-cortinas" class="btn-secondary">Comprar agora</a>
                 </div>
                 <div class="product-card">
                     <h3>Toalhas de Banho</h3>
                     <p>Toalhas macias e absorventes, feitas com 100% algodão para máxima qualidade.</p>
-                    <a href="#" class="btn-secondary">Ver produtos</a>
+                    <a href="#comprar-toalhas-banho" class="btn-secondary">Comprar agora</a>
                 </div>
                 <div class="product-card">
                     <h3>Toalhas de Mesa</h3>
                     <p>Toalhas de mesa Oxford resistentes e fáceis de manter, com diversas estampas e cores.</p>
-                    <a href="#" class="btn-secondary">Ver produtos</a>
+                    <a href="#comprar-toalhas-mesa" class="btn-secondary">Comprar agora</a>
                 </div>
                 <div class="product-card">
                     <h3>Panos de Prato</h3>
                     <p>Panos 100% algodão com alta absorção e resistência – perfeitos para secar louças e mãos.</p>
-                    <a href="#" class="btn-secondary">Ver produtos</a>
+                    <a href="#comprar-panos" class="btn-secondary">Comprar agora</a>
                 </div>
                 <div class="product-card">
                     <h3>Almofadas</h3>
                     <p>Almofadas macias e duráveis com diversas cores e estampas para decorar seu lar.</p>
-                    <a href="#" class="btn-secondary">Ver produtos</a>
+                    <a href="#comprar-almofadas" class="btn-secondary">Comprar agora</a>
                 </div>
             </div>
         </div>
@@ -172,7 +174,8 @@
     <section id="wholesale" class="section alternate">
         <div class="container wholesale-container">
             <h2>Atacado e Revenda</h2>
-            <p>Para lojistas, redes de hotéis ou distribuidores que desejam revender nossos produtos, oferecemos condições especiais de atacado. Preencha o formulário abaixo e nossa equipe comercial entrará em contato para enviar catálogo, tabelas de preços e condições de pagamento.</p>
+            <p>Para lojistas, redes de hotéis ou distribuidores que desejam revender nossos produtos, oferecemos condições especiais de atacado. Preencha o formulário abaixo ou, se preferir um atendimento imediato, clique no botão de WhatsApp para falar com nossa equipe comercial.</p>
+            <p><a href="https://wa.me/5538991091909?text=Olá%2C%20tenho%20interesse%20no%20atacado%20de%20produtos%20Nipse" class="btn-primary" target="_blank">Atendimento via WhatsApp</a></p>
             <form class="wholesale-form" onsubmit="event.preventDefault(); alert('Obrigado! Em breve entraremos em contato.');">
                 <div class="form-group">
                     <label for="nome">Nome</label>
