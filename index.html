@@ -1,230 +1,207 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nipse Confecções – Qualidade e Estilo para o seu Lar</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nipse Confecções – Qualidade e Estilo para o seu Lar</title>
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container nav-container">
-                <!-- Use a cropped, square version of the logo to avoid distortion -->
-                    <!-- Reference the logo at the project root instead of the non-existent images folder -->
-                    <a href="#" class="brand"><img src="logo_square.png" alt="Logo Nipse" class="logo" /> Nipse</a>
-                <ul class="nav-menu">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Quem Somos</a></li>
-                    <li><a href="#products">Produtos</a></li>
-                    <li><a href="#wholesale">Atacado</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <!-- Navigation bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="logo_square.png" alt="Logo Nipse">
+        <span class="brand-name">Nipse</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Quem Somos</a></li>
+        <li><a href="#products">Produtos</a></li>
+        <li><a href="#wholesale">Atacado</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <!-- The hero background previously referenced an external image. To avoid missing
-         assets when deployed via GitHub Pages, we rely on a CSS gradient defined
-         in the stylesheet instead of an external PNG. -->
-    <section id="home" class="hero">
-        <div class="hero-overlay">
-            <div class="hero-content container">
-                <h1>Coleção Nipse: Qualidade e Estilo para o seu Lar</h1>
-                <p>Produtos artesanais de alta qualidade feitos no coração do Norte de Minas para levar conforto e elegância à sua casa.</p>
-                <a href="#products" class="btn-primary">Ver produtos</a>
-            </div>
-        </div>
-    </section>
+  <!-- Hero section with image carousel -->
+  <section id="home" class="hero">
+    <div class="hero-slider">
+      <div class="slide active" style="background-image: url('images/slide1.png');"></div>
+      <div class="slide" style="background-image: url('images/slide2.png');"></div>
+      <div class="slide" style="background-image: url('images/slide3.png');"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Coleção Nipse: Qualidade e Estilo para o seu Lar</h1>
+      <p>Produtos artesanais de alta qualidade feitos no coração do Norte de Minas para levar conforto e elegância à sua casa.</p>
+      <a href="#products" class="btn-primary">Ver produtos</a>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container about-container">
-            <div class="text-column">
-                <h2>Quem Somos</h2>
-                <p>A Nipse é a escolha perfeita para quem busca qualidade e estilo. Somos uma confecção voltada para entender as demandas do mercado de moda e casa. Oferecemos produtos únicos feitos com tecidos de alta qualidade e confeccionados por profissionais experientes no interior do Norte de Minas.</p>
-                <p>Trabalhamos com dedicação para tornar nossa região cada vez mais próspera e reconhecida nacionalmente. Valorizamos as tradições, a resiliência e o amor ao próximo. Descubra a verdadeira essência de um produto feito com paixão e compromisso com a excelência.</p>
-            </div>
-        </div>
-    </section>
+  <!-- About section -->
+  <section id="about" class="about-section">
+    <h2>Quem Somos</h2>
+    <p>A Nipse é a escolha perfeita para quem busca qualidade e estilo. Somos uma confecção voltada para entender as demandas do mercado de moda e casa, oferecendo produtos únicos feitos com tecidos de alta qualidade e confeccionados por profissionais experientes no interior do Norte de Minas.</p>
+    <p>Trabalhamos com dedicação para tornar nossa região cada vez mais próspera e reconhecida nacionalmente. Valorizamos as tradições, a resiliência e o amor ao próximo. Descubra a verdadeira essência de um produto feito com paixão e compromisso com a excelência.</p>
+  </section>
 
-    <!-- Mission Section -->
-    <section id="mission" class="section mission-section">
-        <!-- Use a background image instead of a separate column to avoid redundancy -->
-        <div class="mission-overlay">
-            <div class="container mission-content">
-                <h2>Nossa Missão</h2>
-                <p>Nossa missão na Nipse é muito mais do que medir, cortar e costurar. É criar peças de qualidade e elegância que possam tornar o lar de cada pessoa um lugar mais acolhedor e confortável. Acreditamos que cada detalhe conta e que, através de nossos produtos, podemos contribuir para que as pessoas se sintam mais amadas e cuidadas em suas casas.</p>
-                <blockquote>Nós amamos o que fazemos e esperamos compartilhar essa paixão com você através de nossos produtos.</blockquote>
-            </div>
-        </div>
-    </section>
+  <!-- Mission section -->
+  <section class="mission-section">
+    <h2>Nossa Missão</h2>
+    <p>Nossa missão na Nipse é muito mais do que medir, cortar e costurar. É criar peças de qualidade e elegância que possam tornar o lar de cada pessoa um lugar mais acolhedor e confortável. Acreditamos que cada detalhe conta e que, através de nossos produtos, podemos contribuir para que as pessoas se sintam mais amadas e cuidadas em suas casas.</p>
+    <blockquote>Nós amamos o que fazemos e esperamos compartilhar essa paixão com você através de nossos produtos.</blockquote>
+  </section>
 
-    <!-- Vision Section -->
-    <section id="vision" class="section">
-        <div class="container vision-container">
-            <div class="text-column">
-                <h2>Nossa Visão</h2>
-                <p>Queremos que nossos produtos estejam presentes em cada lar brasileiro. Acreditamos que é possível alcançar esse objetivo por meio de dedicação à qualidade, elegância e inovação. Trabalhamos para sermos a melhor escolha quando se trata de artigos de cama, mesa e banho.</p>
-                <p>Buscamos constantemente aprimorar nossos processos e produtos, sempre mantendo a essência artesanal e o cuidado com cada peça produzida.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Vision section -->
+  <section class="vision-section">
+    <h2>Nossa Visão</h2>
+    <p>Queremos que nossos produtos estejam presentes em cada lar brasileiro. Acreditamos que é possível alcançar esse objetivo por meio de dedicação à qualidade, elegância e inovação. Trabalhamos para sermos a melhor escolha quando se trata de artigos de cama, mesa e banho.</p>
+    <p>Buscamos constantemente aprimorar nossos processos e produtos, sempre mantendo a essência artesanal e o cuidado com cada peça produzida.</p>
+  </section>
 
-    <!-- Values Section -->
-    <section id="values" class="section alternate">
-        <div class="container values-container">
-            <h2>Nossos Valores</h2>
-            <div class="values-grid">
-                <div class="value-item">
-                    <h3>Excelência e Transparência</h3>
-                    <p>Gerimos nossos processos com o mais alto padrão de qualidade e transparência em todas as nossas ações e relacionamentos.</p>
-                </div>
-                <div class="value-item">
-                    <h3>Valorização e Respeito</h3>
-                    <p>Valorizamos nossos colaboradores e clientes, mantendo sempre o respeito por todas as partes envolvidas.</p>
-                </div>
-                <div class="value-item">
-                    <h3>Ética com Inovação</h3>
-                    <p>Acreditamos na ética aliada à inovação para preservar e fortalecer nosso negócio no mercado.</p>
-                </div>
-                <div class="value-item">
-                    <h3>Paixão e Dedicação</h3>
-                    <p>Trabalhamos com paixão e dedicação para alcançar nossos objetivos e sermos reconhecidos como a melhor opção no mercado.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Values section -->
+  <section class="values-section">
+    <h2>Nossos Valores</h2>
+    <div class="values-grid">
+      <div class="value-item">
+        <h3>Excelência e Transparência</h3>
+        <p>Gerimos nossos processos com o mais alto padrão de qualidade e transparência em todas as nossas ações e relacionamentos.</p>
+      </div>
+      <div class="value-item">
+        <h3>Valorização e Respeito</h3>
+        <p>Valorizamos nossos colaboradores e clientes, mantendo sempre o respeito por todas as partes envolvidas.</p>
+      </div>
+      <div class="value-item">
+        <h3>Ética com Inovação</h3>
+        <p>Acreditamos na ética aliada à inovação para preservar e fortalecer nosso negócio no mercado.</p>
+      </div>
+      <div class="value-item">
+        <h3>Paixão e Dedicação</h3>
+        <p>Trabalhamos com paixão e dedicação para alcançar nossos objetivos e sermos reconhecidos como a melhor opção no mercado.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Products Section -->
-    <section id="products" class="section">
-        <div class="container products-container">
-            <h2>Nossos Produtos</h2>
-            <div class="products-grid">
-                <!-- Each product category card -->
-                <div class="product-card">
-                    <h3>Lençóis</h3>
-                    <p>Lençóis tradicionais e com elástico, confeccionados com tecidos de alta qualidade para garantir o máximo de conforto.</p>
-                    <!-- Retail customers can proceed directly to a purchase link (placeholder) -->
-                    <a href="#comprar-lencois" class="btn-secondary">Comprar agora</a>
-                </div>
-                <div class="product-card">
-                    <h3>Capas de Colchão</h3>
-                    <p>Capas projetadas para proteger e prolongar a vida útil do seu colchão, com opções impermeáveis e de tecidos diferenciados.</p>
-                    <a href="#comprar-capas" class="btn-secondary">Comprar agora</a>
-                </div>
-                <div class="product-card">
-                    <h3>Fronhas</h3>
-                    <p>Fronhas delicadas e confortáveis, disponíveis em diversas cores e estampas para complementar seu jogo de cama.</p>
-                    <a href="#comprar-fronhas" class="btn-secondary">Comprar agora</a>
-                </div>
-                <div class="product-card">
-                    <h3>Jogos de Cama</h3>
-                    <p>Conjuntos com equilíbrio perfeito entre conforto e sofisticação. Proporcionam noites de sono aconchegantes.</p>
-                    <a href="#comprar-jogos" class="btn-secondary">Comprar agora</a>
-                </div>
-                <div class="product-card">
-                    <h3>Mantas</h3>
-                    <p>Mantas e cobertores que oferecem conforto térmico e maciez incomparável, com cores e estampas variadas.</p>
-                    <a href="#comprar-mantas" class="btn-secondary">Comprar agora</a>
-                </div>
-                <div class="product-card">
-                    <h3>Cobertores</h3>
-                    <p>Cobertores macios e isolantes, com alta durabilidade – escolha ideal para um descanso acolhedor.</p>
-                    <a href="#comprar-cobertores" class="btn-secondary">Comprar agora</a>
-                </div>
-                <div class="product-card">
-                    <h3>Travesseiros</h3>
-                    <p>Travesseiros de alto conforto e suporte, adaptando-se perfeitamente à cabeça e pescoço.</p>
-                    <a href="#comprar-travesseiros" class="btn-secondary">Comprar agora</a>
-                </div>
-                <div class="product-card">
-                    <h3>Cortinas</h3>
-                    <p>Cortinas elegantes que oferecem privacidade e controle da luz, com opções de tecidos leves e blackout.</p>
-                    <a href="#comprar-cortinas" class="btn-secondary">Comprar agora</a>
-                </div>
-                <div class="product-card">
-                    <h3>Toalhas de Banho</h3>
-                    <p>Toalhas macias e absorventes, feitas com 100% algodão para máxima qualidade.</p>
-                    <a href="#comprar-toalhas-banho" class="btn-secondary">Comprar agora</a>
-                </div>
-                <div class="product-card">
-                    <h3>Toalhas de Mesa</h3>
-                    <p>Toalhas de mesa Oxford resistentes e fáceis de manter, com diversas estampas e cores.</p>
-                    <a href="#comprar-toalhas-mesa" class="btn-secondary">Comprar agora</a>
-                </div>
-                <div class="product-card">
-                    <h3>Panos de Prato</h3>
-                    <p>Panos 100% algodão com alta absorção e resistência – perfeitos para secar louças e mãos.</p>
-                    <a href="#comprar-panos" class="btn-secondary">Comprar agora</a>
-                </div>
-                <div class="product-card">
-                    <h3>Almofadas</h3>
-                    <p>Almofadas macias e duráveis com diversas cores e estampas para decorar seu lar.</p>
-                    <a href="#comprar-almofadas" class="btn-secondary">Comprar agora</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Products section -->
+  <section id="products" class="products-section">
+    <h2>Nossos Produtos</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>Lençóis</h3>
+        <p>Lençóis tradicionais e com elástico, confeccionados com tecidos de alta qualidade para garantir o máximo de conforto.</p>
+        <a href="#comprar-lencois" class="btn-secondary">Comprar agora</a>
+      </div>
+      <div class="product-card">
+        <h3>Capas de Colchão</h3>
+        <p>Capas projetadas para proteger e prolongar a vida útil do seu colchão, com opções impermeáveis e de tecidos diferenciados.</p>
+        <a href="#comprar-capas" class="btn-secondary">Comprar agora</a>
+      </div>
+      <div class="product-card">
+        <h3>Fronhas</h3>
+        <p>Fronhas delicadas e confortáveis, disponíveis em diversas cores e estampas para complementar seu jogo de cama.</p>
+        <a href="#comprar-fronhas" class="btn-secondary">Comprar agora</a>
+      </div>
+      <div class="product-card">
+        <h3>Jogos de Cama</h3>
+        <p>Conjuntos com equilíbrio perfeito entre conforto e sofisticação. Proporcionam noites de sono aconchegantes.</p>
+        <a href="#comprar-jogos" class="btn-secondary">Comprar agora</a>
+      </div>
+      <div class="product-card">
+        <h3>Mantas</h3>
+        <p>Mantas e cobertores que oferecem conforto térmico e maciez incomparável, com cores e estampas variadas.</p>
+        <a href="#comprar-mantas" class="btn-secondary">Comprar agora</a>
+      </div>
+      <div class="product-card">
+        <h3>Cobertores</h3>
+        <p>Cobertores macios e isolantes, com alta durabilidade – escolha ideal para um descanso acolhedor.</p>
+        <a href="#comprar-cobertores" class="btn-secondary">Comprar agora</a>
+      </div>
+      <div class="product-card">
+        <h3>Travesseiros</h3>
+        <p>Travesseiros de alto conforto e suporte, adaptando-se perfeitamente à cabeça e pescoço.</p>
+        <a href="#comprar-travesseiros" class="btn-secondary">Comprar agora</a>
+      </div>
+      <div class="product-card">
+        <h3>Cortinas</h3>
+        <p>Cortinas elegantes que oferecem privacidade e controle da luz, com opções de tecidos leves e blackout.</p>
+        <a href="#comprar-cortinas" class="btn-secondary">Comprar agora</a>
+      </div>
+      <div class="product-card">
+        <h3>Toalhas de Banho</h3>
+        <p>Toalhas macias e absorventes, feitas com 100% algodão para máxima qualidade.</p>
+        <a href="#comprar-toalhas-banho" class="btn-secondary">Comprar agora</a>
+      </div>
+      <div class="product-card">
+        <h3>Toalhas de Mesa</h3>
+        <p>Toalhas de mesa Oxford resistentes e fáceis de manter, com diversas estampas e cores.</p>
+        <a href="#comprar-toalhas-mesa" class="btn-secondary">Comprar agora</a>
+      </div>
+      <div class="product-card">
+        <h3>Panos de Prato</h3>
+        <p>Panos 100% algodão com alta absorção e resistência – perfeitos para secar louças e mãos.</p>
+        <a href="#comprar-panos" class="btn-secondary">Comprar agora</a>
+      </div>
+      <div class="product-card">
+        <h3>Almofadas</h3>
+        <p>Almofadas macias e duráveis com diversas cores e estampas para decorar seu lar.</p>
+        <a href="#comprar-almofadas" class="btn-secondary">Comprar agora</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Wholesale Section -->
-    <section id="wholesale" class="section alternate">
-        <div class="container wholesale-container">
-            <h2>Atacado e Revenda</h2>
-            <p>Para lojistas, redes de hotéis ou distribuidores que desejam revender nossos produtos, oferecemos condições especiais de atacado. Preencha o formulário abaixo ou, se preferir um atendimento imediato, clique no botão de WhatsApp para falar com nossa equipe comercial.</p>
-            <p><a href="https://wa.me/5538991091909?text=Olá%2C%20tenho%20interesse%20no%20atacado%20de%20produtos%20Nipse" class="btn-primary" target="_blank">Atendimento via WhatsApp</a></p>
-            <form class="wholesale-form" onsubmit="event.preventDefault(); alert('Obrigado! Em breve entraremos em contato.');">
-                <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required />
-                </div>
-                <div class="form-group">
-                    <label for="empresa">Empresa</label>
-                    <input type="text" id="empresa" name="empresa" required />
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required />
-                </div>
-                <div class="form-group">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="telefone" required />
-                </div>
-                <div class="form-group full">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte-nos quais produtos você tem interesse, quantidades e outras informações importantes."></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Enviar</button>
-            </form>
-        </div>
-    </section>
+  <!-- Wholesale section -->
+  <section id="wholesale" class="wholesale-section">
+    <h2>Atacado e Revenda</h2>
+    <p>Para lojistas, redes de hotéis ou distribuidores que desejam revender nossos produtos, oferecemos condições especiais de atacado. Preencha o formulário abaixo ou, se preferir um atendimento imediato, clique no botão de WhatsApp para falar com nossa equipe comercial.</p>
+    <a href="https://wa.me/5538991091909?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20atacado%20de%20produtos%20Nipse" class="btn-primary whatsapp-btn" target="_blank">Atendimento via WhatsApp</a>
+    <form class="wholesale-form">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome">
+      <label for="empresa">Empresa</label>
+      <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Seu e-mail">
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone">
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+      <button type="submit" class="btn-primary">Enviar</button>
+    </form>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container contact-container">
-            <h2>Contato</h2>
-            <p>Fale conosco para dúvidas, pedidos ou sugestões. Estamos à disposição para atendê-lo.</p>
-            <ul class="contact-list">
-                <!-- Atualizado conforme nova informação do usuário -->
-                <li><strong>Endereço:</strong> Avenida Juraci Antunes Cruz – Espinosa/MG</li>
-                <li><strong>Telefone:</strong> <a href="tel:+5538991091909">(38) 99109‑1909</a></li>
-                <li><strong>E-mail:</strong> <a href="mailto:nipse@outlook.com.br">nipse@outlook.com.br</a></li>
-                <li><strong>WhatsApp:</strong> <a href="https://wa.me/5538991091909" target="_blank">Fale via WhatsApp</a></li>
-            </ul>
-            <div class="social-links">
-                <a href="#" aria-label="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
-                <a href="#" aria-label="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
-            </div>
-        </div>
-    </section>
+  <!-- Contact section -->
+  <section id="contact" class="contact-section">
+    <h2>Contato</h2>
+    <p>Fale conosco para dúvidas, pedidos ou sugestões. Estamos à disposição para atendê-lo.</p>
+    <ul class="contact-info">
+      <li><strong>Endereço:</strong> Avenida Juraci Antunes Cruz – Espinosa/MG</li>
+      <li><strong>Telefone:</strong> (38) 99109-1909</li>
+      <li><strong>E-mail:</strong> <a href="mailto:nipse@outlook.com.br">nipse@outlook.com.br</a></li>
+      <li><strong>WhatsApp:</strong> <a href="https://wa.me/5538991091909" target="_blank">(38) 99109-1909</a></li>
+    </ul>
+    <div class="social-links">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="Facebook">Facebook</a>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Nipse Confecções. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Nipse Confecções. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Slider functionality -->
+  <script>
+    const slides = document.querySelectorAll('.hero-slider .slide');
+    let currentSlide = 0;
+    function showNextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+    setInterval(showNextSlide, 5000);
+  </script>
 </body>
 </html>
